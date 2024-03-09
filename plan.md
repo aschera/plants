@@ -46,11 +46,13 @@ Detta syftar till att utforska metoder för att integrera data från olika käll
 
 4 Bayesiansk modellering involvera komplexa statistiska beräkningar och antaganden, vilket kan leda till osäkerhet i modellens prediktioner och resultat om inte jag klarar av at göra dom rätt eller gör fel antagenden.
 
+<div style="page-break-before: always;"></div>
+
 # Utkast av plan
 
 @startuml
 
-title Plan
+skinparam defaultFontSize 12
 
 (*) --> "1 - Insammling av data"
 --> "2 - Städning av data"
@@ -64,14 +66,16 @@ else
   ->[false] "Bayesian modell"
 endif
 
---> "A - Valg av Variabler"
---> "B - Hierarkisk Struktur"
---> "C - Prior Fördeling"
---> "D - Inferens"
+--> "A - Valg av Variabler
+    B - Hierarkisk Struktur
+    C - Prior Fördeling
+    D - Inferens"
 --> "E - Validering av Prediktion"
 
-  -->(*)
+-->(*)
 @enduml
+
+<div style="page-break-before: always;"></div>
 
 ## Kod exempel for steg A till E.
 
@@ -108,6 +112,7 @@ with pm.Model() as bayesian_model:
         likelihood = pm.Bernoulli('y', p=p, observed=y_train)
 
 ```
+<div style="page-break-before: always;"></div>
 
 ## Källor:
 
