@@ -137,6 +137,9 @@ https://www.artdatabanken.se/
 3 TRY, en centraliserad databas för växtträdata och integrerar hundratals dataset- innehållande mer än 300 000 växttaxa och 2 661 egenskaper.
 https://www.try-db.org/de/de.php
 
+--- 
+Jag har testat vissa API'er från Artdatabanken och Artportalen här: https://github.com/aschera/plants
+
 # Tidsplanering:
 
 Jag planerar att följa nedanstående tidsram för mitt projekt:
